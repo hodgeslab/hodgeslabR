@@ -11,8 +11,9 @@
 #' ggplot(df,aes(x=x,y=y)) + geom_point() + theme_hodgeslab_basic()
 
 # define hodges themes
-theme_hodgeslab_basic <- function(base_size = 7, base_family = "", line_size = 0.5) {
-  theme_classic(base_size = base_size, base_family = base_family) %+replace%
+theme_hodgeslab_basic <- function(base_size = 7, base_family = "", line_size = 0.5, grid = F, rotx = 0, box = F) {
+
+  p <- theme_classic(base_size = base_size, base_family = base_family) %+replace%
     theme(
       axis.text.x =       element_text(size = base_size * 1, lineheight = 1, vjust = 1, margin=margin(1,0,0,0)),
       axis.text.y =       element_text(size = base_size * 1, lineheight = 1, hjust = 1, margin=margin(0,1,0,0)),
@@ -24,4 +25,29 @@ theme_hodgeslab_basic <- function(base_size = 7, base_family = "", line_size = 0
       legend.text =       element_text(size = base_size * 1),
       legend.key.size =   unit(0.8, "line")
     )
+
+  if(grid == T) {
+    p <- p %+replace% theme(
+      panel.grid.major.x = element_line(colour = "grey80", size = 0.5*line_size*linescale),
+      panel.grid.major.y = element_line(colour = "grey80", size = 0.5*line_size*linescale),
+      panel.grid.minor.x = element_line(colour = "grey95", size = 0.5*line_size*linescale),
+      panel.grid.minor.y = element_line(colour = "grey95", size = 0.5*line_size*linescale)
+    )
+  }
+
+  if(rotx != 0) {
+    p <- p %+replace% theme(
+      axis.text.x = element_text(angle=rotx, size = base_size * 1, lineheight = 1, hjust = 1, vjust = 1, margin=margin(1,0,0,0))
+    )
+  }
+
+  if(box == T) {
+    p <- p %+replace% theme(
+      axis.line.x =       element_line(size = line_size*linescale, linetype="solid", colour=NA),
+      axis.line.y =       element_line(size = line_size*linescale, linetype="solid", colour=NA),
+      panel.border =      element_rect(size = 2*line_size*linescale, colour = "black", fill = NA)
+    )
+  }
+
+  p
 }

@@ -43,4 +43,3 @@ maplot(res)
 }
 \keyword{hodgeslab}
 \keyword{maplot}
-

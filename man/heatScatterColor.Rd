@@ -27,4 +27,3 @@ heatScatterColor(x,y,coldiscrete,colpal="oranges")
 }
 \keyword{heatscatter}
 \keyword{hodgeslab}
-

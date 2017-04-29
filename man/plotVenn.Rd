@@ -41,4 +41,3 @@ plotVenn(matrix(c(1,2,3,4), ncol=2),"Set 1","Set 2","All data")
 \keyword{diagram}
 \keyword{hodgeslab}
 \keyword{venn}
-

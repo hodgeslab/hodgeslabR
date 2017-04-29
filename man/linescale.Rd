@@ -21,4 +21,3 @@ hodgeslab::linescale
 }
 \keyword{hodgeslab}
 \keyword{linescale}
-

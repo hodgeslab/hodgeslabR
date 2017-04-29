@@ -31,4 +31,3 @@ df <- DNase; summarySE(df, measurevar="density", groupvars="conc")
 \keyword{sd}
 \keyword{sem}
 \keyword{summarySE}
-

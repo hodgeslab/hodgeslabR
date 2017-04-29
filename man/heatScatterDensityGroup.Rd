@@ -27,4 +27,3 @@ heatScatterDensityGroup(x,y,"oranges")
 }
 \keyword{heatscatter}
 \keyword{hodgeslab}
-

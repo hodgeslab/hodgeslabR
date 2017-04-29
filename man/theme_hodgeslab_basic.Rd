@@ -22,4 +22,3 @@ ggplot(df,aes(x=x,y=y)) + geom_point() + theme_hodgeslab_basic()
 }
 \keyword{hodgeslab}
 \keyword{theme}
-

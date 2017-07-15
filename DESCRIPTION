@@ -6,8 +6,8 @@ Description: Defines a suite of common functions, templates, and utilities for
     use in the Hodges lab.
 Depends:
     R (>= 3.2.2),
+    plyr,
     tidyverse (>= 1.1.1),
-    plyr
 Imports:
     ggrepel,
     LSD

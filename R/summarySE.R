@@ -27,8 +27,8 @@ summarySE <- function(data=NULL, measurevar, groupvars=NULL, na.rm=FALSE,
   datac <- plyr::ddply(data, groupvars, .drop=.drop,
                  .fun = function(xx, col) {
                    c(N    = length2(xx[[col]], na.rm=na.rm),
+                     median = median(xx[[col]], na.rm=na.rm),
                      mean = mean  (xx[[col]], na.rm=na.rm),
-                     med  = median(xx[[col]], na.rm=na.rm),
                      sd   = sd    (xx[[col]], na.rm=na.rm)
                    )
                  },
@@ -36,7 +36,7 @@ summarySE <- function(data=NULL, measurevar, groupvars=NULL, na.rm=FALSE,
   )
   
   # Rename the "mean" column    
-  datac <- rename(datac, c("mean" = measurevar))
+  # datac <- rename(datac, c("mean" = measurevar))
   
   datac$se <- datac$sd / sqrt(datac$N)  # Calculate standard error of the mean
   

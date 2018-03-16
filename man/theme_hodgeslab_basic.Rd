@@ -4,7 +4,7 @@
 \alias{theme_hodgeslab_basic}
 \title{Basic ggplot2 theme for the Hodges lab}
 \usage{
-theme_hodgeslab_basic(base_size = 7, base_family = "", line_size = 0.5,
+theme_hodgeslab_basic(base_size = 7, base_family = "", line_size = 0.25,
   grid = F, rotx = 0, box = F)
 }
 \arguments{

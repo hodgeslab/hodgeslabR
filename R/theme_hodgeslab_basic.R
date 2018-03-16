@@ -11,7 +11,7 @@
 #' ggplot(df,aes(x=x,y=y)) + geom_point() + theme_hodgeslab_basic()
 
 # define hodges themes
-theme_hodgeslab_basic <- function(base_size = 7, base_family = "", line_size = 0.5, grid = F, rotx = 0, box = F) {
+theme_hodgeslab_basic <- function(base_size = 7, base_family = "", line_size = 0.25, grid = F, rotx = 0, box = F) {
 
   p <- theme_classic(base_size = base_size, base_family = base_family) %+replace%
     theme(
@@ -23,7 +23,8 @@ theme_hodgeslab_basic <- function(base_size = 7, base_family = "", line_size = 0
       axis.line.y =       element_line(size = line_size*linescale, linetype="solid", colour="black"),
       axis.ticks =        element_line(size = line_size*linescale, colour = "black"),
       legend.text =       element_text(size = base_size * 1),
-      legend.key.size =   unit(0.8, "line")
+      legend.key.size =   unit(0.8, "line"),
+      strip.background = element_blank()
     )
 
   if(grid == T) {

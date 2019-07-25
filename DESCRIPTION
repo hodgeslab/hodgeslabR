@@ -9,7 +9,6 @@ Depends:
     plyr,
     tidyverse (>= 1.1.1),
     LSD,
-    DESeq2,
     gplots,
     pheatmap,
     RColorBrewer,

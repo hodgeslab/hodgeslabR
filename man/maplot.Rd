@@ -4,10 +4,10 @@
 \alias{maplot}
 \title{Plots MA plot for the Hodges lab}
 \usage{
-maplot(res, foldthresh = log2(1.5), pthresh = 0.1, colpal_unch = "greys",
-  colpal_incr = "oranges", colpal_decr = "blues", minCount = 0,
-  ylim = c(-2.25, 2.25), label = F, maxlabel = 50, grid = F, box = T,
-  ...)
+maplot(res, foldthresh = log2(1.5), pthresh = 0.1,
+  colpal_unch = "greys", colpal_incr = "oranges",
+  colpal_decr = "blues", minCount = 0, ylim = c(-2.25, 2.25),
+  label = F, maxlabel = 50, grid = F, box = T, ...)
 }
 \arguments{
 \item{res}{Results data frame from DESeq2. Important fields are "id", "baseMean", "log2FoldChange", "padj", and "label".}

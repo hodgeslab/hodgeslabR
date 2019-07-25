@@ -12,6 +12,7 @@ Depends:
     DESeq2,
     gplots,
     pheatmap,
+    RColorBrewer,
     BiocManager
 Imports:
     ggrepel,

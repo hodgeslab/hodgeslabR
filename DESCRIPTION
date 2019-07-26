@@ -8,6 +8,8 @@ Depends:
     R (>= 3.5.0),
     plyr,
     tidyverse (>= 1.1.1),
+    reshape,
+    calibrate,
     LSD,
     gplots,
     pheatmap,

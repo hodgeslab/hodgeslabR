@@ -4,7 +4,9 @@
 \name{linescale}
 \alias{linescale}
 \title{Define the linescale constant for the Hodges lab plots}
-\format{An object of class \code{numeric} of length 1.}
+\format{
+An object of class \code{numeric} of length 1.
+}
 \usage{
 linescale
 }

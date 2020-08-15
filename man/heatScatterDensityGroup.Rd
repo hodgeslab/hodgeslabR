@@ -4,10 +4,23 @@
 \alias{heatScatterDensityGroup}
 \title{Discrete density group values for x and y data using code from LSD::heatscatter(), from for the Hodges lab}
 \usage{
-heatScatterDensityGroup(x, y, nrcol = 30, grid = 100,
-  colpal = "heat", simulate = FALSE, daltonize = FALSE, cvd = "p",
-  alpha = NULL, rev = FALSE, only = "none", nlevels = 10,
-  greyscale = FALSE, log = "", ...)
+heatScatterDensityGroup(
+  x,
+  y,
+  nrcol = 30,
+  grid = 100,
+  colpal = "heat",
+  simulate = FALSE,
+  daltonize = FALSE,
+  cvd = "p",
+  alpha = NULL,
+  rev = FALSE,
+  only = "none",
+  nlevels = 10,
+  greyscale = FALSE,
+  log = "",
+  ...
+)
 }
 \arguments{
 \item{x}{Values of x}

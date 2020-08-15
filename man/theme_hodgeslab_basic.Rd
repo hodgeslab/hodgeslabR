@@ -4,8 +4,14 @@
 \alias{theme_hodgeslab_basic}
 \title{Basic ggplot2 theme for the Hodges lab}
 \usage{
-theme_hodgeslab_basic(base_size = 7, base_family = "",
-  line_size = 0.25, grid = F, rotx = 0, box = F)
+theme_hodgeslab_basic(
+  base_size = 7,
+  base_family = "",
+  line_size = 0.25,
+  grid = F,
+  rotx = 0,
+  box = F
+)
 }
 \arguments{
 \item{base_size}{Sets the Postscript font size for all labels, in units of pt. Defaults to 7.}

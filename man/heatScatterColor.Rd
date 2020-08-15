@@ -4,10 +4,24 @@
 \alias{heatScatterColor}
 \title{Color values for x and y data using code from LSD::heatscatter(), from for the Hodges lab}
 \usage{
-heatScatterColor(x, y, coldiscrete = NULL, nrcol = 30, grid = 100,
-  colpal = "heat", simulate = FALSE, daltonize = FALSE, cvd = "p",
-  alpha = NULL, rev = FALSE, only = "none", nlevels = 10,
-  greyscale = FALSE, log = "", ...)
+heatScatterColor(
+  x,
+  y,
+  coldiscrete = NULL,
+  nrcol = 30,
+  grid = 100,
+  colpal = "heat",
+  simulate = FALSE,
+  daltonize = FALSE,
+  cvd = "p",
+  alpha = NULL,
+  rev = FALSE,
+  only = "none",
+  nlevels = 10,
+  greyscale = FALSE,
+  log = "",
+  ...
+)
 }
 \arguments{
 \item{x}{Values of x}

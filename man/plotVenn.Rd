@@ -4,9 +4,16 @@
 \alias{plotVenn}
 \title{Plots two-sample Euler diagram for the Hodges lab}
 \usage{
-plotVenn(mat, name1 = "", name2 = "", nametot = "", theta = -30,
-  col = c("#a3cec6", "#7e74b5", "#8f9d3a"), method = "fisher",
-  legend.position = "bottom")
+plotVenn(
+  mat,
+  name1 = "",
+  name2 = "",
+  nametot = "",
+  theta = -30,
+  col = c("#a3cec6", "#7e74b5", "#8f9d3a"),
+  method = "fisher",
+  legend.position = "bottom"
+)
 }
 \arguments{
 \item{mat}{Contingency table as defined above.}

@@ -38,7 +38,7 @@ theme_hodgeslab_basic <- function(base_size = 7, base_family = "", line_size = 0
 
   if(rotx != 0) {
     p <- p %+replace% theme(
-      axis.text.x = element_text(angle=rotx, size = base_size * 1, lineheight = 1, hjust = 1, vjust = 1, margin=margin(1,0,0,0))
+      axis.text.x = element_text(angle=rotx, size = base_size * 1, lineheight = 1, colour="black", hjust = 1, vjust = 1, margin=margin(1,0,0,0))
     )
   }
 

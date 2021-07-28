@@ -1,25 +1,23 @@
 Package: hodgeslabR
 Title: Common Code for the Hodges Lab
-Version: 0.0.0.9003
+Version: 0.0.0.9004
 Authors@R: person("Courtney", "Hodges", email = "chodges@bcm.edu", role = c("aut", "cre"))
 Description: Defines a suite of common functions, templates, and utilities for
     use in the Hodges lab.
 Depends:
     R (>= 3.5.0),
     tidyverse (>= 1.1.1),
-    reshape,
-    calibrate,
-    LSD,
-    gplots,
-    pheatmap,
-    RColorBrewer,
-    BiocManager
+    BiocManager,
+    RColorBrewer
 Imports:
     plyr,
-    ggrepel,
     LSD
 Suggests:
-    gplots
+    gplots,
+    pheatmap
+    calibrate,
+    ggrepel
+
 License: MIT
 Encoding: UTF-8
 LazyData: true

@@ -1,12 +1,11 @@
 Package: hodgeslabR
 Title: Common Code for the Hodges Lab
-Version: 0.0.0.9002
+Version: 0.0.0.9003
 Authors@R: person("Courtney", "Hodges", email = "chodges@bcm.edu", role = c("aut", "cre"))
 Description: Defines a suite of common functions, templates, and utilities for
     use in the Hodges lab.
 Depends:
     R (>= 3.5.0),
-    plyr,
     tidyverse (>= 1.1.1),
     reshape,
     calibrate,
@@ -16,6 +15,7 @@ Depends:
     RColorBrewer,
     BiocManager
 Imports:
+    plyr,
     ggrepel,
     LSD
 Suggests:

@@ -1,6 +1,6 @@
 Package: hodgeslabR
 Title: Common Code for the Hodges Lab
-Version: 0.0.0.9004
+Version: 0.0.0.9005
 Authors@R: person("Courtney", "Hodges", email = "chodges@bcm.edu", role = c("aut", "cre"))
 Description: Defines a suite of common functions, templates, and utilities for
     use in the Hodges lab.
@@ -14,7 +14,7 @@ Imports:
     LSD
 Suggests:
     gplots,
-    pheatmap
+    pheatmap,
     calibrate,
     ggrepel
 
